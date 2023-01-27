@@ -1,0 +1,25 @@
+{
+  "name": "teamprofilegenerator",
+  "version": "1.0.0",
+  "description": "Application that generates an html of a team",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisEliGirard/TeamProfileGenerator.git"
+  },
+  "author": "chriseligirard@github.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisEliGirard/TeamProfileGenerator/issues"
+  },
+  "homepage": "https://github.com/ChrisEliGirard/TeamProfileGenerator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.5"
+  }
+}
