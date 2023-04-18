@@ -18,14 +18,14 @@ describe("Employee", () => {
 		});
 
 		it("Should throw an error if not provided a positive id", () => {
-			const employee = () => new Employee("Christopher Girard", 'chrisgirard@buisness.com');
+			const employee = () => new Employee("Christopher Girard", -1,'chrisgirard@buisness.com');
 			const err = new Error("Expected argument 'id' to be a non zero positive number");
 
 			expect(employee).toThrowError(err);
 		});
 
     it("Should throw an error if id entered is NaN", () => {
-			const employee = () => new Employee("Christopher Girard", '1', 'chrisgirard@buisness.com');
+			const employee = () => new Employee("Christopher Girard", 'wiw', 'chrisgirard@buisness.com');
 			const err = new Error("Expected argument 'id' to be a non zero positive number");
 
 			expect(employee).toThrowError(err);

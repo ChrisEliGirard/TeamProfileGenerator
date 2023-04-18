@@ -33,7 +33,7 @@ const generateHTML = (team) => {
                 <div class="card-body">
                   <p class="id border-top border-bottom border-1">ID: ${engineer.id}</p>
                   <p class="email border-top border-bottom border-1">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-                  <p class="github border-top border-bottom border-1">GitHub: <a href="https://github.com/${engineer.github}"${engineer.github}</a></p>
+                  <p class="github border-top border-bottom border-1">GitHub: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
                 </div>
               </div>
             </div>
@@ -71,7 +71,7 @@ const generateHTML = (team) => {
         generateIntern(team[i]); 
      }
 }
-  return htmlCards
+  return htmlCards.toString();
 }
 const pageGenerator = team => {
   let page = 
@@ -104,7 +104,7 @@ const pageGenerator = team => {
     </body>
   </html>`
 
-  fs.writeFile("./dist/routes/index.html", page, (err) => err && console.error(err));
+  fs.writeFile("./dist/views/index.html", page, (err) => err && console.error(err));
 };
 
 module.exports = pageGenerator;
