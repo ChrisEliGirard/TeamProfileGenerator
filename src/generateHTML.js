@@ -9,7 +9,7 @@ const generateHTML = (team) => {
                 <div class="card h-100 w-75">
                   <div class="card-header bg-primary">
                     <h3>${manager.name}</h3>
-                    <h4>Manager</h4><i class="fa-solid fa-mug-hot"></i>
+                    <h4>Manager</h4>
                   </div>
                   <div class="card-body">
                     <p class="id border-top border-bottom border-1">ID: ${manager.id}</p>
@@ -28,7 +28,7 @@ const generateHTML = (team) => {
               <div class="card h-100 w-75">
                 <div class="card-header bg-primary">
                   <h3>${engineer.name}</h3>
-                  <h4>Engineer</h4><i class="fa-solid fa-glasses"></i>
+                  <h4>Engineer</h4>
                 </div>
                 <div class="card-body">
                   <p class="id border-top border-bottom border-1">ID: ${engineer.id}</p>
@@ -47,7 +47,7 @@ const generateHTML = (team) => {
               <div class="card h-100 w-75">
                 <div class="card-header bg-primary">
                   <h3>${intern.name}</h3>
-                  <h4>Intern</h4><i class="fa-solid fa-graduation-cap"></i>
+                  <h4>Intern</h4>
                 </div>
                 <div class="card-body">
                   <p class="id border-top border-bottom border-1">ID: ${intern.id}</p>
