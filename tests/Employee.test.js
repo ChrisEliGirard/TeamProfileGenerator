@@ -2,7 +2,7 @@ const Employee = require("../lib/Employee");
 
 describe("Employee", () => {
 	describe("Creation", () => {
-		it("Should instantiate an Employee object with a name, id, and email when provided those args", () => {
+		it("Should instantiate an Employee object with a name, id, and email when passed valid args", () => {
 			const employee = new Employee('Christopher Girard', 1, 'chrisgirard@buisness.com');
 
 			expect(employee.name).toEqual('Christopher Girard');
